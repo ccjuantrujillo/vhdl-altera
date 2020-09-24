@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Administrador/Desktop/Altera/30_Sumador1_2/MedioSumador.vhd
+source_file = 1, C:/Users/Administrador/Desktop/Altera/30_Sumador1_2/SimMedioSumador.vwf
+source_file = 1, C:/Users/Administrador/Desktop/Altera/30_Sumador1_2/db/MedioSumador.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = MedioSumador
+instance = comp, \cout~output , cout~output, MedioSumador, 1
+instance = comp, \f~output , f~output, MedioSumador, 1
+instance = comp, \b~input , b~input, MedioSumador, 1
+instance = comp, \a~input , a~input, MedioSumador, 1
+instance = comp, \cout~0 , cout~0, MedioSumador, 1
+instance = comp, \f~0 , f~0, MedioSumador, 1

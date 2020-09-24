@@ -1,0 +1,8 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Administrador/Desktop/Altera/tutorial1.bdf
+source_file = 1, C:/Users/Administrador/Desktop/Altera/db/tutorial1.cbx.xml
+design_name = tutorial1
+instance = comp, \Y~output , Y~output, tutorial1, 1
+instance = comp, \B~input , B~input, tutorial1, 1
+instance = comp, \A~input , A~input, tutorial1, 1
+instance = comp, \C~input , C~input, tutorial1, 1

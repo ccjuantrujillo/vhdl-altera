@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Administrador/Desktop/Altera/04_CompuertaAndOr/ledaltera.vhd
+source_file = 1, C:/Users/Administrador/Desktop/Altera/04_CompuertaAndOr/Tutorial2_Sim.vwf
+source_file = 1, C:/Users/Administrador/Desktop/Altera/04_CompuertaAndOr/db/Tutorial2.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Tutorial2
+instance = comp, \A~I , A, Tutorial2, 1
+instance = comp, \B~I , B, Tutorial2, 1
+instance = comp, \Yand~0 , Yand~0, Tutorial2, 1
+instance = comp, \Yor~0 , Yor~0, Tutorial2, 1
+instance = comp, \Yand~I , Yand, Tutorial2, 1
+instance = comp, \Yor~I , Yor, Tutorial2, 1
+instance = comp, \Ynot~I , Ynot, Tutorial2, 1

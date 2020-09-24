@@ -1,0 +1,11 @@
+|Tutorial2
+A => Yand.IN0
+A => Yor.IN0
+A => Ynot.DATAIN
+B => Yand.IN1
+B => Yor.IN1
+Yand <= Yand.DB_MAX_OUTPUT_PORT_TYPE
+Yor <= Yor.DB_MAX_OUTPUT_PORT_TYPE
+Ynot <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+

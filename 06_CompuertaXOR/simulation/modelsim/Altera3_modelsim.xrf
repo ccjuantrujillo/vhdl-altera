@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Administrador/Desktop/Altera/03_CompuertaXOR/Altera3.vhd
+source_file = 1, C:/Users/Administrador/Desktop/Altera/03_CompuertaXOR/Comp_xor_sim.vwf
+source_file = 1, C:/Users/Administrador/Desktop/Altera/03_CompuertaXOR/db/Altera3.cbx.xml
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.0sp1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Altera3
+instance = comp, \a~I , a, Altera3, 1
+instance = comp, \b~I , b, Altera3, 1
+instance = comp, \f~0 , f~0, Altera3, 1
+instance = comp, \f~I , f, Altera3, 1

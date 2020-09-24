@@ -1,0 +1,232 @@
+|alu
+a[0] => unidad:U1.aa[0]
+a[1] => unidad:U1.aa[1]
+a[2] => unidad:U1.aa[2]
+a[3] => unidad:U1.aa[3]
+b[0] => unidad:U1.bb[0]
+b[1] => unidad:U1.bb[1]
+b[2] => unidad:U1.bb[2]
+b[3] => unidad:U1.bb[3]
+resultat[0] <= unidad:U1.sortida[0]
+resultat[1] <= unidad:U1.sortida[1]
+resultat[2] <= unidad:U1.sortida[2]
+resultat[3] <= unidad:U1.sortida[3]
+op0 => unidad:U1.operacio0
+op1 => unidad:U1.operacio1
+op2 => unidad:U1.operacio2
+cout <= unidad:U1.ccout
+
+
+|alu|unidad:U1
+aa[0] => abminus:SUBSTRACT1.a[0]
+aa[0] => abxor:XOR1.a[0]
+aa[0] => add:INCREMENT1.aa[0]
+aa[0] => anot:COMPLEMENT1.a[0]
+aa[0] => abminus:DECREMENT1.a[0]
+aa[0] => abor:OR1.a[0]
+aa[0] => add:ADD1.aa[0]
+aa[1] => abminus:SUBSTRACT1.a[1]
+aa[1] => abxor:XOR1.a[1]
+aa[1] => add:INCREMENT1.aa[1]
+aa[1] => anot:COMPLEMENT1.a[1]
+aa[1] => abminus:DECREMENT1.a[1]
+aa[1] => abor:OR1.a[1]
+aa[1] => add:ADD1.aa[1]
+aa[2] => abminus:SUBSTRACT1.a[2]
+aa[2] => abxor:XOR1.a[2]
+aa[2] => add:INCREMENT1.aa[2]
+aa[2] => anot:COMPLEMENT1.a[2]
+aa[2] => abminus:DECREMENT1.a[2]
+aa[2] => abor:OR1.a[2]
+aa[2] => add:ADD1.aa[2]
+aa[3] => abminus:SUBSTRACT1.a[3]
+aa[3] => abxor:XOR1.a[3]
+aa[3] => add:INCREMENT1.aa[3]
+aa[3] => anot:COMPLEMENT1.a[3]
+aa[3] => abminus:DECREMENT1.a[3]
+aa[3] => abor:OR1.a[3]
+aa[3] => add:ADD1.aa[3]
+bb[0] => abminus:SUBSTRACT1.b[0]
+bb[0] => abxor:XOR1.b[0]
+bb[0] => abor:OR1.b[0]
+bb[0] => add:ADD1.bb[0]
+bb[1] => abminus:SUBSTRACT1.b[1]
+bb[1] => abxor:XOR1.b[1]
+bb[1] => abor:OR1.b[1]
+bb[1] => add:ADD1.bb[1]
+bb[2] => abminus:SUBSTRACT1.b[2]
+bb[2] => abxor:XOR1.b[2]
+bb[2] => abor:OR1.b[2]
+bb[2] => add:ADD1.bb[2]
+bb[3] => abminus:SUBSTRACT1.b[3]
+bb[3] => abxor:XOR1.b[3]
+bb[3] => abor:OR1.b[3]
+bb[3] => add:ADD1.bb[3]
+operacio0 => multiplexor:MUX1.operacion0
+operacio1 => multiplexor:MUX1.operacion1
+operacio2 => multiplexor:MUX1.operacion2
+sortida[0] <= multiplexor:MUX1.salida[0]
+sortida[1] <= multiplexor:MUX1.salida[1]
+sortida[2] <= multiplexor:MUX1.salida[2]
+sortida[3] <= multiplexor:MUX1.salida[3]
+ccout <= add:ADD1.acarreo
+
+
+|alu|unidad:U1|abminus:SUBSTRACT1
+a[0] => Add0.IN8
+a[1] => Add0.IN7
+a[2] => Add0.IN6
+a[3] => Add0.IN5
+b[0] => Add0.IN4
+b[1] => Add0.IN3
+b[2] => Add0.IN2
+b[3] => Add0.IN1
+rest[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|abxor:XOR1
+a[0] => f.IN0
+a[1] => f.IN0
+a[2] => f.IN0
+a[3] => f.IN0
+b[0] => f.IN1
+b[1] => f.IN1
+b[2] => f.IN1
+b[3] => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|add:INCREMENT1
+aa[0] => Add0.IN4
+aa[1] => Add0.IN3
+aa[2] => Add0.IN2
+aa[3] => Add0.IN1
+bb[0] => Add0.IN8
+bb[1] => Add0.IN7
+bb[2] => Add0.IN6
+bb[3] => Add0.IN5
+suma[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|anot:COMPLEMENT1
+a[0] => s[0].DATAIN
+a[1] => s[1].DATAIN
+a[2] => s[2].DATAIN
+a[3] => s[3].DATAIN
+s[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= a[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= a[2].DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= a[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|abminus:DECREMENT1
+a[0] => Add0.IN8
+a[1] => Add0.IN7
+a[2] => Add0.IN6
+a[3] => Add0.IN5
+b[0] => Add0.IN4
+b[1] => Add0.IN3
+b[2] => Add0.IN2
+b[3] => Add0.IN1
+rest[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+rest[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|abor:OR1
+a[0] => f.IN0
+a[1] => f.IN0
+a[2] => f.IN0
+a[3] => f.IN0
+b[0] => f.IN1
+b[1] => f.IN1
+b[2] => f.IN1
+b[3] => f.IN1
+f[0] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= f.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|add:ADD1
+aa[0] => Add0.IN4
+aa[1] => Add0.IN3
+aa[2] => Add0.IN2
+aa[3] => Add0.IN1
+bb[0] => Add0.IN8
+bb[1] => Add0.IN7
+bb[2] => Add0.IN6
+bb[3] => Add0.IN5
+suma[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+suma[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+acarreo <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|unidad:U1|multiplexor:MUX1
+entr_0[0] => producto0[0].IN1
+entr_0[1] => producto0[1].IN1
+entr_0[2] => producto0[2].IN1
+entr_0[3] => producto0[3].IN1
+entr_1[0] => producto1[0].IN1
+entr_1[1] => producto1[1].IN1
+entr_1[2] => producto1[2].IN1
+entr_1[3] => producto1[3].IN1
+entr_2[0] => producto2[0].IN1
+entr_2[1] => producto2[1].IN1
+entr_2[2] => producto2[2].IN1
+entr_2[3] => producto2[3].IN1
+entr_3[0] => producto3[0].IN1
+entr_3[1] => producto3[1].IN1
+entr_3[2] => producto3[2].IN1
+entr_3[3] => producto3[3].IN1
+entr_4[0] => producto4[0].IN1
+entr_4[1] => producto4[1].IN1
+entr_4[2] => producto4[2].IN1
+entr_4[3] => producto4[3].IN1
+entr_5[0] => producto5[0].IN1
+entr_5[1] => producto5[1].IN1
+entr_5[2] => producto5[2].IN1
+entr_5[3] => producto5[3].IN1
+entr_6[0] => producto6[0].IN1
+entr_6[1] => producto6[1].IN1
+entr_6[2] => producto6[2].IN1
+entr_6[3] => producto6[3].IN1
+entr_7[0] => producto7[0].IN1
+entr_7[1] => producto7[1].IN1
+entr_7[2] => producto7[2].IN1
+entr_7[3] => producto7[3].IN1
+operacion0 => producto4.IN0
+operacion0 => producto6.IN0
+operacion0 => producto0.IN0
+operacion0 => producto2.IN0
+operacion1 => producto2.IN1
+operacion1 => producto6.IN1
+operacion1 => producto0.IN1
+operacion1 => producto4.IN1
+operacion2 => producto1.IN1
+operacion2 => producto3.IN1
+operacion2 => producto5.IN1
+operacion2 => producto7.IN1
+operacion2 => producto0.IN1
+operacion2 => producto2.IN1
+operacion2 => producto4.IN1
+operacion2 => producto6.IN1
+salida[0] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+
+

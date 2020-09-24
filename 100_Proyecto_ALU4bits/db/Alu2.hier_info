@@ -1,0 +1,210 @@
+|Alu2
+A[0] => resta:SUBTRACT1.aa[0]
+A[0] => compuertaXor:XOR1.aa[0]
+A[0] => sumador:INCREMENT1.aa[0]
+A[0] => complemento:COMPLEMENT1.aa[0]
+A[0] => resta:DECREMENT1.aa[0]
+A[0] => compuertaOr:OR1.aa[0]
+A[0] => sumador:ADD1.aa[0]
+A[1] => resta:SUBTRACT1.aa[1]
+A[1] => compuertaXor:XOR1.aa[1]
+A[1] => sumador:INCREMENT1.aa[1]
+A[1] => complemento:COMPLEMENT1.aa[1]
+A[1] => resta:DECREMENT1.aa[1]
+A[1] => compuertaOr:OR1.aa[1]
+A[1] => sumador:ADD1.aa[1]
+A[2] => resta:SUBTRACT1.aa[2]
+A[2] => compuertaXor:XOR1.aa[2]
+A[2] => sumador:INCREMENT1.aa[2]
+A[2] => complemento:COMPLEMENT1.aa[2]
+A[2] => resta:DECREMENT1.aa[2]
+A[2] => compuertaOr:OR1.aa[2]
+A[2] => sumador:ADD1.aa[2]
+A[3] => resta:SUBTRACT1.aa[3]
+A[3] => compuertaXor:XOR1.aa[3]
+A[3] => sumador:INCREMENT1.aa[3]
+A[3] => complemento:COMPLEMENT1.aa[3]
+A[3] => resta:DECREMENT1.aa[3]
+A[3] => compuertaOr:OR1.aa[3]
+A[3] => sumador:ADD1.aa[3]
+B[0] => resta:SUBTRACT1.bb[0]
+B[0] => compuertaXor:XOR1.bb[0]
+B[0] => compuertaOr:OR1.bb[0]
+B[0] => sumador:ADD1.bb[0]
+B[1] => resta:SUBTRACT1.bb[1]
+B[1] => compuertaXor:XOR1.bb[1]
+B[1] => compuertaOr:OR1.bb[1]
+B[1] => sumador:ADD1.bb[1]
+B[2] => resta:SUBTRACT1.bb[2]
+B[2] => compuertaXor:XOR1.bb[2]
+B[2] => compuertaOr:OR1.bb[2]
+B[2] => sumador:ADD1.bb[2]
+B[3] => resta:SUBTRACT1.bb[3]
+B[3] => compuertaXor:XOR1.bb[3]
+B[3] => compuertaOr:OR1.bb[3]
+B[3] => sumador:ADD1.bb[3]
+sel[0] => Mux0.IN6
+sel[0] => multiplexor:MUX1.selMux[0]
+sel[1] => Mux0.IN5
+sel[1] => multiplexor:MUX1.selMux[1]
+sel[2] => Mux0.IN4
+sel[2] => multiplexor:MUX1.selMux[2]
+S[0] << multiplexor:MUX1.salida[0]
+S[1] << multiplexor:MUX1.salida[1]
+S[2] << multiplexor:MUX1.salida[2]
+S[3] << multiplexor:MUX1.salida[3]
+acarreo <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|resta:SUBTRACT1
+aa[0] => Add0.IN8
+aa[1] => Add0.IN7
+aa[2] => Add0.IN6
+aa[3] => Add0.IN5
+bb[0] => Add0.IN4
+bb[1] => Add0.IN3
+bb[2] => Add0.IN2
+bb[3] => Add0.IN1
+ss[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ac <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|compuertaXor:XOR1
+aa[0] => RESULT.IN0
+aa[1] => RESULT.IN0
+aa[2] => RESULT.IN0
+aa[3] => RESULT.IN0
+bb[0] => RESULT.IN1
+bb[1] => RESULT.IN1
+bb[2] => RESULT.IN1
+bb[3] => RESULT.IN1
+ss[0] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|sumador:INCREMENT1
+aa[0] => Add0.IN4
+aa[1] => Add0.IN3
+aa[2] => Add0.IN2
+aa[3] => Add0.IN1
+bb[0] => Add0.IN8
+bb[1] => Add0.IN7
+bb[2] => Add0.IN6
+bb[3] => Add0.IN5
+ss[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ac <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|complemento:COMPLEMENT1
+aa[0] => ss[0].DATAIN
+aa[1] => ss[1].DATAIN
+aa[2] => ss[2].DATAIN
+aa[3] => ss[3].DATAIN
+ss[0] <= aa[0].DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= aa[1].DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= aa[2].DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= aa[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|resta:DECREMENT1
+aa[0] => Add0.IN8
+aa[1] => Add0.IN7
+aa[2] => Add0.IN6
+aa[3] => Add0.IN5
+bb[0] => Add0.IN4
+bb[1] => Add0.IN3
+bb[2] => Add0.IN2
+bb[3] => Add0.IN1
+ss[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ac <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|compuertaOr:OR1
+aa[0] => RESULT.IN0
+aa[1] => RESULT.IN0
+aa[2] => RESULT.IN0
+aa[3] => RESULT.IN0
+bb[0] => RESULT.IN1
+bb[1] => RESULT.IN1
+bb[2] => RESULT.IN1
+bb[3] => RESULT.IN1
+ss[0] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= RESULT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|sumador:ADD1
+aa[0] => Add0.IN4
+aa[1] => Add0.IN3
+aa[2] => Add0.IN2
+aa[3] => Add0.IN1
+bb[0] => Add0.IN8
+bb[1] => Add0.IN7
+bb[2] => Add0.IN6
+bb[3] => Add0.IN5
+ss[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ss[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+ac <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Alu2|multiplexor:MUX1
+ent0[0] => Mux3.IN1
+ent0[1] => Mux2.IN1
+ent0[2] => Mux1.IN1
+ent0[3] => Mux0.IN1
+ent1[0] => Mux3.IN2
+ent1[1] => Mux2.IN2
+ent1[2] => Mux1.IN2
+ent1[3] => Mux0.IN2
+ent2[0] => Mux3.IN3
+ent2[1] => Mux2.IN3
+ent2[2] => Mux1.IN3
+ent2[3] => Mux0.IN3
+ent3[0] => Mux3.IN4
+ent3[1] => Mux2.IN4
+ent3[2] => Mux1.IN4
+ent3[3] => Mux0.IN4
+ent4[0] => Mux3.IN5
+ent4[1] => Mux2.IN5
+ent4[2] => Mux1.IN5
+ent4[3] => Mux0.IN5
+ent5[0] => Mux3.IN6
+ent5[1] => Mux2.IN6
+ent5[2] => Mux1.IN6
+ent5[3] => Mux0.IN6
+ent6[0] => Mux3.IN7
+ent6[1] => Mux2.IN7
+ent6[2] => Mux1.IN7
+ent6[3] => Mux0.IN7
+selMux[0] => Mux0.IN10
+selMux[0] => Mux1.IN10
+selMux[0] => Mux2.IN10
+selMux[0] => Mux3.IN10
+selMux[1] => Mux0.IN9
+selMux[1] => Mux1.IN9
+selMux[1] => Mux2.IN9
+selMux[1] => Mux3.IN9
+selMux[2] => Mux0.IN8
+selMux[2] => Mux1.IN8
+selMux[2] => Mux2.IN8
+selMux[2] => Mux3.IN8
+salida[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

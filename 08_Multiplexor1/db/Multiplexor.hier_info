@@ -1,0 +1,19 @@
+|Multiplexor
+A[0] => s.DATAB
+A[1] => s.DATAB
+A[2] => s.DATAB
+A[3] => s.DATAB
+B[0] => s.DATAA
+B[1] => s.DATAA
+B[2] => s.DATAA
+B[3] => s.DATAA
+Sel => s.OUTPUTSELECT
+Sel => s.OUTPUTSELECT
+Sel => s.OUTPUTSELECT
+Sel => s.OUTPUTSELECT
+s[0] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= s.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+

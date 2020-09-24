@@ -1,0 +1,13 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Multiplexor is 
+Port(
+	
+);
+end Multiplexor;
+
+architecture Mux2_1 of Multiplexor is
+begin
+
+end Mux2_1

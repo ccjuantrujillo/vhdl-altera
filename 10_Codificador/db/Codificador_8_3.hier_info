@@ -1,0 +1,14 @@
+|Codificador_8_3
+dentro[0] => Mux0.IN19
+dentro[0] => Mux1.IN19
+dentro[1] => Mux0.IN18
+dentro[1] => Mux1.IN18
+dentro[2] => Mux0.IN17
+dentro[2] => Mux1.IN17
+dentro[3] => Mux0.IN16
+dentro[3] => Mux1.IN16
+fuera[0] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+fuera[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+error <= <VCC>
+
+

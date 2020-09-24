@@ -1,0 +1,22 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+entity alu is
+	port(
+		a: in std_logic_vector(7 downto 0);
+		b: in std_logic_vector(7 downto 0);
+		resultat: out std_logic_vector(7 downto 0);
+		
+		op0: in std_logic;
+		op1: in std_logic;
+		op2: in std_logic;
+		cout: out std_logic;
+	);
+end alu;
+
+architecture estructura of alu is
+	signal x,y:std_logic_vector(7 downto 0);
+	begin
+	
+end estructura;

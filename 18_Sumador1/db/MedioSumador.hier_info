@@ -1,0 +1,9 @@
+|MedioSumador
+a => f.IN0
+a => cout.IN0
+b => f.IN1
+b => cout.IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

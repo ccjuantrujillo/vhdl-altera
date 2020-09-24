@@ -1,0 +1,102 @@
+$comment
+	File created using the following command:
+		vcd file Altera3.msim.vcd -direction
+$end
+$date
+	Tue Oct 15 17:52:38 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Altera3_vlg_vec_tst $end
+$var reg 1 ! a $end
+$var reg 1 " b $end
+$var wire 1 # f $end
+$var wire 1 $ sampler $end
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + a~combout $end
+$var wire 1 , b~combout $end
+$var wire 1 - f~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+$end
+#5000
+1!
+1+
+0$
+1-
+1#
+#10000
+1"
+0!
+1,
+0+
+1$
+#15000
+1!
+1+
+0$
+0-
+0#
+#20000
+0"
+0!
+0,
+0+
+1$
+#25000
+1!
+1+
+0$
+1-
+1#
+#30000
+1"
+0!
+1,
+0+
+1$
+#35000
+1!
+1+
+0$
+0-
+0#
+#40000
+0"
+0!
+0,
+0+
+1$
+#45000
+1!
+1+
+0$
+1-
+1#
+#50000

@@ -1,0 +1,17 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+entity DecoderBCD is
+	port(
+		bcd: in bit_vector(3 downto 0);
+		led: out bit_vector(3 downto 0)
+	);
+end DecoderBCD;
+
+architecture rte1 of DecoderBCD is
+begin
+process(bcd)
+	
+end process;
+end rte1;

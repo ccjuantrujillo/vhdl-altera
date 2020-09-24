@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrador\Desktop\Altera\51_SimulacionHALFADDER\simulation\qsim
+vMedioSumador
+Z1 !s100 @cOlbR6WzVMcU7H>F_moQ3
+Z2 IONSX0?fmg@TjInMkh0UY:1
+Z3 VhRfg`kbYJ^URfnj_]YcTd3
+Z4 dC:\Users\Administrador\Desktop\Altera\30_Sumador1_2\simulation\qsim
+Z5 w1571181111
+Z6 8MedioSumador.vo
+Z7 FMedioSumador.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MedioSumador.vo|
+Z10 o-work work -O0
+Z11 n@medio@sumador
+!i10b 1
+!s85 0
+Z12 !s108 1571181112.315000
+Z13 !s107 MedioSumador.vo|
+!s101 -O0
+vMedioSumador_vlg_check_tst
+!i10b 1
+Z14 !s100 PXMQ^84mDJXnC:=TX^<o;2
+Z15 I4O7:OmULnzA>VddS6TNe:0
+Z16 VON?f7LXFMn0<E7h?:MB230
+R4
+Z17 w1571181110
+Z18 8MedioSumador.vt
+Z19 FMedioSumador.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1571181112.592000
+Z21 !s107 MedioSumador.vt|
+Z22 !s90 -work|work|MedioSumador.vt|
+!s101 -O0
+R10
+Z23 n@medio@sumador_vlg_check_tst
+vMedioSumador_vlg_sample_tst
+!i10b 1
+Z24 !s100 RZCebFLKW:a7U]fSXVkW21
+Z25 IO>L_aefYkU_0i]5=^^W=O2
+Z26 V]Mo0VPe]Ria?6[gbPn;R61
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@medio@sumador_vlg_sample_tst
+vMedioSumador_vlg_vec_tst
+!i10b 1
+Z28 !s100 oJoN7QVGElFGenFfzL7TB2
+Z29 IOHX1cfK12NEfK?f:=C1:R3
+Z30 VA;KS]aj2G8G8dNCAk^QfU3
+R4
+R17
+R18
+R19
+Z31 L0 181
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z32 n@medio@sumador_vlg_vec_tst

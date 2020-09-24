@@ -1,0 +1,276 @@
+$comment
+	File created using the following command:
+		vcd file Multiplexor.msim.vcd -direction
+$end
+$date
+	Tue Oct 15 18:53:21 2019
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Multiplexor_vlg_vec_tst $end
+$var reg 4 ! A [3:0] $end
+$var reg 4 " B [3:0] $end
+$var reg 1 # Sel $end
+$var wire 1 $ s [3] $end
+$var wire 1 % s [2] $end
+$var wire 1 & s [1] $end
+$var wire 1 ' s [0] $end
+$var wire 1 ( sampler $end
+$scope module i1 $end
+$var wire 1 ) gnd $end
+$var wire 1 * vcc $end
+$var wire 1 + unknown $end
+$var tri1 1 , devclrn $end
+$var tri1 1 - devpor $end
+$var tri1 1 . devoe $end
+$var wire 1 / s[0]~output_o $end
+$var wire 1 0 s[1]~output_o $end
+$var wire 1 1 s[2]~output_o $end
+$var wire 1 2 s[3]~output_o $end
+$var wire 1 3 A[0]~input_o $end
+$var wire 1 4 B[0]~input_o $end
+$var wire 1 5 Sel~input_o $end
+$var wire 1 6 s~0_combout $end
+$var wire 1 7 B[1]~input_o $end
+$var wire 1 8 A[1]~input_o $end
+$var wire 1 9 s~1_combout $end
+$var wire 1 : A[2]~input_o $end
+$var wire 1 ; B[2]~input_o $end
+$var wire 1 < s~2_combout $end
+$var wire 1 = A[3]~input_o $end
+$var wire 1 > B[3]~input_o $end
+$var wire 1 ? s~3_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b101 !
+b1010 "
+0#
+1'
+0&
+1%
+0$
+x(
+0)
+1*
+x+
+1,
+1-
+1.
+1/
+00
+11
+02
+13
+04
+05
+16
+17
+08
+09
+1:
+0;
+1<
+0=
+1>
+0?
+$end
+#80000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#160000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#240000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#320000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#400000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#480000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#560000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#640000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#720000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#800000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#880000
+1#
+15
+0(
+1?
+0<
+19
+06
+12
+01
+10
+0/
+1$
+0%
+1&
+0'
+#960000
+0#
+05
+1(
+0?
+1<
+09
+16
+02
+11
+00
+1/
+0$
+1%
+0&
+1'
+#1000000

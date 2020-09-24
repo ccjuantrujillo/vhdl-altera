@@ -1,0 +1,61 @@
+|Sumador
+s0 <= suma:inst.f
+A0 => suma:inst.A
+B0 => suma:inst.B
+CE => suma:inst.C
+s1 <= suma:inst8.f
+A1 => suma:inst8.A
+B1 => suma:inst8.B
+s2 <= suma:inst9.f
+A2 => suma:inst9.A
+B2 => suma:inst9.B
+s3 <= suma:inst10.f
+A3 => suma:inst10.A
+B3 => suma:inst10.B
+c0 <= suma:inst10.Cout
+
+
+|Sumador|suma:inst
+f <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C => inst4.IN1
+C => inst.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador|suma:inst8
+f <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C => inst4.IN1
+C => inst.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador|suma:inst9
+f <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C => inst4.IN1
+C => inst.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sumador|suma:inst10
+f <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+A => inst3.IN0
+A => inst1.IN0
+B => inst3.IN1
+B => inst1.IN1
+C => inst4.IN1
+C => inst.IN1
+Cout <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+
+

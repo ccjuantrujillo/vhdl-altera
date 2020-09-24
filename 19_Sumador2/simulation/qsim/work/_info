@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrador\Desktop\Altera\31_Sumador4\simulation\qsim
+vSumador4Bits
+Z1 !s100 ?0cjnYm]QaT9]BaknL6W00
+Z2 IXWeU<GC5[jKI2j_km1IS11
+Z3 VSUlzel8>ORE`YfE4EZf?c2
+Z4 dC:\Users\Administrador\Desktop\Altera\31_Sumador4\simulation\qsim
+Z5 w1571182475
+Z6 8Sumador4Bits.vo
+Z7 FSumador4Bits.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|Sumador4Bits.vo|
+Z10 o-work work -O0
+Z11 n@sumador4@bits
+!i10b 1
+!s85 0
+Z12 !s108 1571182476.619000
+Z13 !s107 Sumador4Bits.vo|
+!s101 -O0
+vSumador4Bits_vlg_check_tst
+!i10b 1
+!s100 cDIT8ol7MkDQMKbEPXdME3
+IVQ95_;8<ViCgmS?Vag8Mz0
+Z14 VIf7jSIV;5TfJ]XPaRo2b?1
+R4
+Z15 w1571182474
+Z16 8Sumador4Bits.vt
+Z17 FSumador4Bits.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z18 !s108 1571182476.823000
+Z19 !s107 Sumador4Bits.vt|
+Z20 !s90 -work|work|Sumador4Bits.vt|
+!s101 -O0
+R10
+Z21 n@sumador4@bits_vlg_check_tst
+vSumador4Bits_vlg_sample_tst
+!i10b 1
+Z22 !s100 WmL^im=FeZD7FM@zTBg]Z1
+Z23 IThV`S:k`E5?[ABGl2AGUL3
+Z24 V0^=;9KPm7YThTffnSEe?90
+R4
+R15
+R16
+R17
+L0 29
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z25 n@sumador4@bits_vlg_sample_tst
+vSumador4Bits_vlg_vec_tst
+!i10b 1
+!s100 Z[Y??6IXl_zfc3bELHF842
+I]@zlCf2oMM11>;TD=GkBi1
+Z26 VimH_ELFDin9PbW516J?;E1
+R4
+R15
+R16
+R17
+Z27 L0 230
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!s101 -O0
+R10
+Z28 n@sumador4@bits_vlg_vec_tst

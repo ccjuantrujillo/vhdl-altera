@@ -1,0 +1,101 @@
+|alu
+a[0] => suma_resta:U2.aa[0]
+a[1] => suma_resta:U2.aa[1]
+a[2] => suma_resta:U2.aa[2]
+a[3] => suma_resta:U2.aa[3]
+a[4] => suma_resta:U2.aa[4]
+a[5] => suma_resta:U2.aa[5]
+a[6] => suma_resta:U2.aa[6]
+a[7] => suma_resta:U2.aa[7]
+b[0] => suma_resta:U2.bb[0]
+b[1] => suma_resta:U2.bb[1]
+b[2] => suma_resta:U2.bb[2]
+b[3] => suma_resta:U2.bb[3]
+b[4] => suma_resta:U2.bb[4]
+b[5] => suma_resta:U2.bb[5]
+b[6] => suma_resta:U2.bb[6]
+b[7] => suma_resta:U2.bb[7]
+resultat[0] <= multiplexor:U3.sortida[0]
+resultat[1] <= multiplexor:U3.sortida[1]
+resultat[2] <= multiplexor:U3.sortida[2]
+resultat[3] <= multiplexor:U3.sortida[3]
+resultat[4] <= multiplexor:U3.sortida[4]
+resultat[5] <= multiplexor:U3.sortida[5]
+resultat[6] <= multiplexor:U3.sortida[6]
+resultat[7] <= multiplexor:U3.sortida[7]
+op0 => suma_resta:U2.operacio0
+op0 => multiplexor:U3.operacio0
+op1 => suma_resta:U2.operacio1
+op1 => multiplexor:U3.operacio1
+op2 => suma_resta:U2.operacio2
+op2 => multiplexor:U3.operacio2
+cout <= suma_resta:U2.cout
+
+
+|alu|suma_resta:U2
+aa[0] => a_entr_sum[0].IN1
+aa[1] => a_entr_sum[1].IN1
+aa[2] => a_entr_sum[2].IN1
+aa[3] => a_entr_sum[3].IN1
+aa[4] => a_entr_sum[4].IN1
+aa[5] => a_entr_sum[5].IN1
+aa[6] => a_entr_sum[6].IN1
+aa[7] => a_entr_sum[7].IN1
+bb[0] => b_entr_sum[0].IN1
+bb[1] => b_entr_sum[1].IN1
+bb[2] => b_entr_sum[2].IN1
+bb[3] => b_entr_sum[3].IN1
+bb[4] => b_entr_sum[4].IN1
+bb[5] => b_entr_sum[5].IN1
+bb[6] => b_entr_sum[6].IN1
+bb[7] => b_entr_sum[7].IN1
+operacio0 => clra.IN0
+operacio0 => invb.IN0
+operacio1 => cin[0].IN0
+operacio1 => clra.IN1
+operacio2 => invb.IN1
+operacio2 => cin[0].IN1
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[0] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[1] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[2] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[3] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[4] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[5] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[6] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+sor_sum_res[7] <= sor_sum_res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu|multiplexor:U3
+entr_a[0] => sor0[0].IN1
+entr_a[1] => sor0[1].IN1
+entr_a[2] => sor0[2].IN1
+entr_a[3] => sor0[3].IN1
+entr_a[4] => sor0[4].IN1
+entr_a[5] => sor0[5].IN1
+entr_a[6] => sor0[6].IN1
+entr_a[7] => sor0[7].IN1
+entr_b[0] => sor1[0].IN1
+entr_b[1] => sor1[1].IN1
+entr_b[2] => sor1[2].IN1
+entr_b[3] => sor1[3].IN1
+entr_b[4] => sor1[4].IN1
+entr_b[5] => sor1[5].IN1
+entr_b[6] => sor1[6].IN1
+entr_b[7] => sor1[7].IN1
+operacio0 => regi1.IN0
+operacio0 => regi2.IN0
+operacio1 => regi1.IN1
+operacio1 => regi2.IN1
+operacio2 => regi2.IN1
+operacio2 => regi1.IN1
+sortida[0] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[1] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[2] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[3] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[4] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[5] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[6] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+sortida[7] <= sortida.DB_MAX_OUTPUT_PORT_TYPE
+
+

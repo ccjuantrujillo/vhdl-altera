@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Administrador\Desktop\Altera\10_Multiplexor1\simulation\qsim
+vMultiplexor
+Z1 IFB8FAz@VRC2kCK=D76HQI0
+Z2 VhH3K5Y6TSedjYf9nN1HE<2
+Z3 dC:\Users\Administrador\Desktop\Altera\10_Multiplexor1\simulation\qsim
+Z4 w1571183599
+Z5 8Multiplexor.vo
+Z6 FMultiplexor.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@multiplexor
+!i10b 1
+Z10 !s100 [mnf]>Z3Nle8?^=h<Ccai1
+!s85 0
+Z11 !s108 1571183600.300000
+Z12 !s107 Multiplexor.vo|
+Z13 !s90 -work|work|Multiplexor.vo|
+!s101 -O0
+vMultiplexor_vlg_check_tst
+!i10b 1
+!s100 O_MFN:ZfA7l1>_g^;>VG[0
+IFEQH[`S@`^O6`>TBi8<[d1
+VL9=<IUQIjET8kUgEPNcMH0
+R3
+Z14 w1571183597
+Z15 8Multiplexor.vt
+Z16 FMultiplexor.vt
+L0 61
+R7
+r1
+!s85 0
+31
+Z17 !s108 1571183600.525000
+Z18 !s107 Multiplexor.vt|
+Z19 !s90 -work|work|Multiplexor.vt|
+!s101 -O0
+R8
+n@multiplexor_vlg_check_tst
+vMultiplexor_vlg_sample_tst
+!i10b 1
+!s100 _iRbn[EBWITz^Ah>K5k^F1
+ILDfaYNnoK_b6;ff3C`oU]0
+V4YHH5;64n0if[d7m=M45n1
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@multiplexor_vlg_sample_tst
+vMultiplexor_vlg_vec_tst
+!i10b 1
+!s100 XgbHnQPLSA=[j<BeUVfbJ2
+IaC??3ag8VXMijGaE=nf0Q0
+VO4G8gDYVD1]J`Wl9e3`ja0
+R3
+R14
+R15
+R16
+L0 209
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@multiplexor_vlg_vec_tst

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\xampp\htdocs\ALU4BITS-con-VHDL\26_Decoder_3_6\simulation\qsim
+vDecoder3_6
+Z1 Im2fSW?L_jZXll@ON3lGX=2
+Z2 VNMiO=K3IQ8@^C?h:Re_3V2
+Z3 dC:\xampp\htdocs\ALU4BITS-con-VHDL\26_Decoder_3_6\simulation\qsim
+Z4 w1571258699
+Z5 8Decoder3_6.vo
+Z6 FDecoder3_6.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+Z9 n@decoder3_6
+!i10b 1
+Z10 !s100 Wnba8YbQFQa>kl]32moCm1
+!s85 0
+Z11 !s108 1571258702.523000
+Z12 !s107 Decoder3_6.vo|
+Z13 !s90 -work|work|Decoder3_6.vo|
+!s101 -O0
+vDecoder3_6_vlg_check_tst
+!i10b 1
+!s100 o?8Q6j:9D^a1JNI@R>Gkh2
+I07SmQWhJ6gOZgJ`6IaCRk3
+VW^`ZlcXaDB<53UFE]T:_G3
+R3
+Z14 w1571258697
+Z15 8Decoder3_6.vt
+Z16 FDecoder3_6.vt
+L0 57
+R7
+r1
+!s85 0
+31
+Z17 !s108 1571258702.799000
+Z18 !s107 Decoder3_6.vt|
+Z19 !s90 -work|work|Decoder3_6.vt|
+!s101 -O0
+R8
+n@decoder3_6_vlg_check_tst
+vDecoder3_6_vlg_sample_tst
+!i10b 1
+!s100 ka5mEF9IzPP@Tb^hAKEG`2
+I31M:;G?Sbh3em8>TTD9Zm2
+VGi<@]X;KKE:=7CoAHSC<P0
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@decoder3_6_vlg_sample_tst
+vDecoder3_6_vlg_vec_tst
+!i10b 1
+!s100 T>C[G6?J;RZUMVhjB^EYc1
+I@=3WV2DeB1eWK4FV:R>j81
+VYR8J8j]kX2iXUMb3OiYI40
+R3
+R14
+R15
+R16
+L0 241
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R8
+n@decoder3_6_vlg_vec_tst

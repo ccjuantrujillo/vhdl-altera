@@ -1,0 +1,42 @@
+|Decoder3_8
+entrada[0] => Equal0.IN2
+entrada[0] => Equal1.IN2
+entrada[0] => Equal2.IN1
+entrada[0] => Equal3.IN2
+entrada[0] => Equal4.IN1
+entrada[0] => Equal5.IN2
+entrada[0] => Equal6.IN2
+entrada[1] => Equal0.IN1
+entrada[1] => Equal1.IN0
+entrada[1] => Equal2.IN0
+entrada[1] => Equal3.IN1
+entrada[1] => Equal4.IN2
+entrada[1] => Equal5.IN1
+entrada[1] => Equal6.IN1
+entrada[2] => Equal0.IN0
+entrada[2] => Equal1.IN1
+entrada[2] => Equal2.IN2
+entrada[2] => Equal3.IN0
+entrada[2] => Equal4.IN0
+entrada[2] => Equal5.IN0
+entrada[2] => Equal6.IN0
+g1 => salida.IN0
+g2 => salida[0].OUTPUTSELECT
+g2 => salida[2].OUTPUTSELECT
+g2 => salida[3].OUTPUTSELECT
+g2 => salida[4].OUTPUTSELECT
+g2 => salida[5].OUTPUTSELECT
+g2 => salida[6].OUTPUTSELECT
+g2 => salida[7].IN1
+g2 => salida[7].OUTPUTSELECT
+g2 => salida.IN1
+salida[0] <= salida[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= <VCC>
+salida[2] <= salida[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= salida[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= salida[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= salida[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= salida[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+salida[7] <= salida[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

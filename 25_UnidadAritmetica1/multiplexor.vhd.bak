@@ -1,0 +1,12 @@
+library ieee;
+
+use ieee.std_logic_1164.all;
+
+entity multiplexor is
+	port(
+		entr_a: in std_logic_vector(7 downto 0);
+		entr_b: in std_logic_vector(7 downto 0);
+		operacio0,operacio1,operacio2: in std_logic;
+		sortida: out std_logic_vector(7 downto 0)
+	);
+end multiplexor;
