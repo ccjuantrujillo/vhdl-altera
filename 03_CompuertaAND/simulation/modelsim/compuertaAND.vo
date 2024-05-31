@@ -1,22 +1,22 @@
-// Copyright (C) 1991-2013 Altera Corporation
-// Your use of Altera Corporation's design tools, logic functions 
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
 // and other software and tools, and its AMPP partner logic 
 // functions, and any output files from any of the foregoing 
 // (including device programming or simulation files), and any 
 // associated documentation or information are expressly subject 
-// to the terms and conditions of the Altera Program License 
-// Subscription Agreement, Altera MegaCore Function License 
-// Agreement, or other applicable license agreement, including, 
-// without limitation, that your use is for the sole purpose of 
-// programming logic devices manufactured by Altera and sold by 
-// Altera or its authorized distributors.  Please refer to the 
-// applicable agreement for further details.
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
 
 // VENDOR "Altera"
-// PROGRAM "Quartus II 64-Bit"
-// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "10/15/2019 17:34:15"
+// DATE "05/31/2024 00:07:49"
 
 // 
 // Device: Altera EP4CGX15BF14C6 Package FBGA169
@@ -37,9 +37,9 @@ input 	b;
 output 	f;
 
 // Design Ports Information
-// f	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// a	=>  Location: PIN_E10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// b	=>  Location: PIN_D12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// f	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// a	=>  Location: PIN_M6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// b	=>  Location: PIN_N4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -54,12 +54,17 @@ tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
 wire \f~output_o ;
-wire \a~input_o ;
 wire \b~input_o ;
+wire \a~input_o ;
 wire \f~0_combout ;
 
 
-// Location: IOOBUF_X33_Y28_N2
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X12_Y0_N2
 cycloneiv_io_obuf \f~output (
 	.i(\f~0_combout ),
 	.oe(vcc),
@@ -72,17 +77,7 @@ defparam \f~output .bus_hold = "false";
 defparam \f~output .open_drain_output = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X33_Y27_N1
-cycloneiv_io_ibuf \a~input (
-	.i(a),
-	.ibar(gnd),
-	.o(\a~input_o ));
-// synopsys translate_off
-defparam \a~input .bus_hold = "false";
-defparam \a~input .simulate_z_as = "z";
-// synopsys translate_on
-
-// Location: IOIBUF_X33_Y28_N8
+// Location: IOIBUF_X10_Y0_N8
 cycloneiv_io_ibuf \b~input (
 	.i(b),
 	.ibar(gnd),
@@ -92,15 +87,25 @@ defparam \b~input .bus_hold = "false";
 defparam \b~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LCCOMB_X32_Y28_N8
+// Location: IOIBUF_X12_Y0_N8
+cycloneiv_io_ibuf \a~input (
+	.i(a),
+	.ibar(gnd),
+	.o(\a~input_o ));
+// synopsys translate_off
+defparam \a~input .bus_hold = "false";
+defparam \a~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X9_Y1_N16
 cycloneiv_lcell_comb \f~0 (
 // Equation(s):
-// \f~0_combout  = (\a~input_o  & \b~input_o )
+// \f~0_combout  = (\b~input_o  & \a~input_o )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(\a~input_o ),
-	.datad(\b~input_o ),
+	.datac(\b~input_o ),
+	.datad(\a~input_o ),
 	.cin(gnd),
 	.combout(\f~0_combout ),
 	.cout());
@@ -110,5 +115,40 @@ defparam \f~0 .sum_lutc_input = "datac";
 // synopsys translate_on
 
 assign f = \f~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_NCEO~	=>  Location: PIN_N5,	 I/O Standard: 2.5 V,	 Current Strength: 16mA
+// ~ALTERA_DATA0~	=>  Location: PIN_A5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_ASDO~	=>  Location: PIN_B5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_NCSO~	=>  Location: PIN_C5,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO~~padout ;
+wire \~ALTERA_NCSO~~padout ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+wire \~ALTERA_ASDO~~ibuf_o ;
+wire \~ALTERA_NCSO~~ibuf_o ;
+
 
 endmodule
