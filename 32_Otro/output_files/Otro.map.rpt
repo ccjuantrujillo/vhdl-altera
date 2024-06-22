@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Otro
-Fri May 31 00:02:20 2024
+Sat Jun 08 23:52:09 2024
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri May 31 00:02:20 2024           ;
+; Analysis & Synthesis Status        ; Failed - Sat Jun 08 23:52:09 2024           ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Otro                                        ;
 ; Top-level Entity Name              ; Otro                                        ;
@@ -164,7 +164,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Fri May 31 00:02:09 2024
+    Info: Processing started: Sat Jun 08 23:51:57 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Otro -c Otro
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -252,7 +252,7 @@ Error (12007): Top-level design entity "Otro" is undefined
 Info (144001): Generated suppressed messages file D:/script/vhdl-altera/32_Otro/output_files/Otro.map.smsg
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 1 warning
     Error: Peak virtual memory: 4794 megabytes
-    Error: Processing ended: Fri May 31 00:02:22 2024
+    Error: Processing ended: Sat Jun 08 23:52:10 2024
     Error: Elapsed time: 00:00:13
     Error: Total CPU time (on all processors): 00:00:10
 
