@@ -1,0 +1,31 @@
+|Led_1
+clk => Parpadeo.CLK
+clk => Reloj[0].CLK
+clk => Reloj[1].CLK
+clk => Reloj[2].CLK
+clk => Reloj[3].CLK
+clk => Reloj[4].CLK
+clk => Reloj[5].CLK
+clk => Reloj[6].CLK
+clk => Reloj[7].CLK
+clk => Reloj[8].CLK
+clk => Reloj[9].CLK
+clk => Reloj[10].CLK
+clk => Reloj[11].CLK
+clk => Reloj[12].CLK
+clk => Reloj[13].CLK
+clk => Reloj[14].CLK
+clk => Reloj[15].CLK
+clk => Reloj[16].CLK
+clk => Reloj[17].CLK
+clk => Reloj[18].CLK
+clk => Reloj[19].CLK
+clk => Reloj[20].CLK
+clk => Reloj[21].CLK
+clk => Reloj[22].CLK
+clk => Reloj[23].CLK
+clk => Reloj[24].CLK
+clk => Reloj[25].CLK
+led << Parpadeo.DB_MAX_OUTPUT_PORT_TYPE
+
+
